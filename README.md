@@ -2,7 +2,7 @@
 
 Your-E-Diagnostic is a project for Intelligent Reasoning Systems in National University of Singapore.
 
-The system asked the symptoms from users and make a disease prediction according to their syptoms.
+The system askes the symptoms from users and makes a disease prediction according to their syptoms.
 
 All the functions are programmed based on Python and presented on a HTML page
 
