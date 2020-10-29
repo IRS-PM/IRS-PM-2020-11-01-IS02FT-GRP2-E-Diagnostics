@@ -27,30 +27,30 @@ All the functions are programmed based on Python and presented on a HTML page
 
 # Instructions & Functions display
 
-Install the required libraries.
+* Install the required libraries.
 
-Run the main.py in folder "E-Diagnostics".
+* Run the main.py in folder "E-Diagnostics".
 
-Run the project on http://127.0.0.1:2020/ in Browser to reach the index page.
+* Run the project on http://127.0.0.1:2020/ in Browser to reach the index page.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/e-diagnostic.png)
 
-Click the respective box basde on the symptoms the you are getting through.
+* Click the respective box basde on the symptoms the you are getting through.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/example1.png)
 
-Click the checkbox to select the symptoms you have and click the "Confirm" button".  
+* Click the checkbox to select the symptoms you have and click the "Confirm" button".  
 
-If you do not find any symptoms you have in the list, click "Back" button to return to the index page.
+* If you do not find any symptoms you have in the list, click "Back" button to return to the index page.
 
-After selecting the corresponding symptoms, it will show a message box for you to check what you have selected. You can choose to add on more symptoms by clicking the respective boxes below.
+* After selecting the corresponding symptoms, it will show a message box for you to check what you have selected. You can choose to add on more symptoms by clicking the respective boxes below.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/example2.png)
 
-If done, click the "Confirm" button to get the disease prediction.
+* If done, click the "Confirm" button to get the disease prediction.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/example3.png)
 
-#### A kindly reminder: This website only works on prediction. Please refer to the details and suggestions given by the hospital
+* Click "Back" button to return to the index page.
 
 
