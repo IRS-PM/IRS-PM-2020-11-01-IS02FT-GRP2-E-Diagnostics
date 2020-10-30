@@ -33,13 +33,15 @@ All the functions are programmed based on Python and presented on a HTML page
 
 * Run the project on http://127.0.0.1:2020/ in Browser (only supported by Chrome, Firefox, Opera) to reach the index page. 
 
-![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/e-diagnostic.png)
+![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/e-diagnostics.png)
 
 * Click the respective box basde on the symptoms the you are getting through.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/example1.png)
 
 * Click the checkbox to select the symptoms you have and click the "Confirm" button".  
+
+#### The more you select, the more accurate the prediction would be.
 
 * If you do not find any symptoms you have in the list, click "Back" button to return to the index page.
 
