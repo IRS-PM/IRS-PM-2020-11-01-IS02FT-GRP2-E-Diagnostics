@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Reproductive</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo" class="container">
+			<h1 style="font-family: Verdana;">Reproductive</h1>
+			<br>
+			<p>Reproductive medicine is a branch of medicine concerning the male and female reproductive systems.</p>
+		</div>
+	</div>
+	<form action="/" method="POST">
+		<div class="container">
+			<h3 class="text-center mt-3" style="font-family: Verdana;">Select the Symptoms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Confirm" align="center" onclick="storeData()" style="background-color: #5BA689; color:white"></h3>
+			<table class="table table-striped table-hover mt-4" style="font-family: Verdana; width:650px" align="center">
+				<tbody>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" abnormal_menstruation" value="121" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" abnormal_menstruation">Abnormal Menstruation </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" bladder_discomfort" value="32" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" bladder_discomfort">Bladder Discomfort </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" burning_micturition" value="31" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" burning_micturition">Burning Micturition </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" continuous_feel_of_urine" value="70" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" continuous_feel_of_urine">Continuous Feel Of Urine </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" dark_urine" value="62" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" dark_urine">Dark Urine </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" foul_smell_of_urine" value="52" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" foul_smell_of_urine">Foul Smell Of Urine </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" irritation_in_anus" value="81" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" irritation_in_anus">Irritation In Anus </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" pain_in_anal_region" value="44" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" pain_in_anal_region">Pain In Anal Region </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" polyuria" value="109" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" polyuria">Polyuria </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" spotting_urination" value="73" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" spotting_urination">Spotting Urination </label></td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td><input type="checkbox" class="form-check-input" id=" yellow_urine" value="102" name="symptoms_checkbox"></td>
+						<td><label class="form-check-label" for=" yellow_urine">Yellow Urine </label></td>
+					</tr>
+
+	            </tbody>
+			</table>
+			<br><br>
+			<h3 class="text-center mt-3" style="font-family: Verdana;"><input type="button" value="Back" align="center" style="background-color: #5BA689; color:white" onclick="backTo()"></h3>
+			<script>
+				function backTo() {
+					existed = localStorage.getItem("checkedItem");
+					if(existed == null) {
+						top.location = "/";
+					}
+					else {
+						top.location = "/afterSelection";
+					}
+				}
+			</script>
+		</div>
+	</form>
+	</div>
+	<script>
+		function storeData() {
+			checkBox = document.getElementsByName("symptoms_checkbox");
+			checked = [];
+			for (k in checkBox) {
+		        if (checkBox[k].checked)
+		            checked.push(checkBox[k].value);
+			}
+			localStorage.tempItem = checked;
+			if(localStorage.checkedItem == null) {
+				localStorage.checkedItem = localStorage.tempItem;
+			}
+			else {
+				localStorage.checkedItem = localStorage.checkedItem + ",";
+				localStorage.checkedItem = localStorage.checkedItem + localStorage.tempItem;
+			}
+			window.location.href = "/afterSelection";
+		}
+	</script>
+</body>
+<div id="footer">
+	<p>2020 - NUS - ISS - Machine Reasoning Systems</p>
+</div>
+</html>
