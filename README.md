@@ -41,7 +41,7 @@ All the functions are programmed based on Python and presented on a HTML page
 
 * Click the checkbox to select the symptoms you have and click the "Confirm" button".  
 
-#### * The more you select, the more accurate the prediction would be.
+#### ***** The more you select, the more accurate the prediction would be. *****
 
 * If you do not find any symptoms you have in the list, click "Back" button to return to the index page.
 
