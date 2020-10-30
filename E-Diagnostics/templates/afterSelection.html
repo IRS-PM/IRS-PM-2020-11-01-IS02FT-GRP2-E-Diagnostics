@@ -194,13 +194,11 @@ Released   : 20130406
 				n = existed.split(",");				
 				str = "";
 				for (k in n) {
-					temp = parseInt(n[k]);
-					if(k == 0) {
-						if(temp == 0) {
+					temp = parseInt(n[k]);	
+					if(flag[temp] == 0) {
+						if(symptoms_dict[temp] == 'Itching') {
 							str += " ";
 						}
-					}	
-					if(flag[temp] == 0) {
 						str = str + symptoms_dict[temp];
 						str += "\r\n";
 						flag[temp] = 1;
