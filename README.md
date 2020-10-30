@@ -31,7 +31,7 @@ All the functions are programmed based on Python and presented on a HTML page
 
 * Run the main.py in folder "E-Diagnostics".
 
-* Run the project on http://127.0.0.1:2020/ in Browser to reach the index page.
+* Run the project on http://127.0.0.1:2020/ in Browser (only supported by Chrome, Firefox, Opera) to reach the index page. 
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/e-diagnostic.png)
 
