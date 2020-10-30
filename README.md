@@ -43,6 +43,12 @@ All the functions are programmed based on Python and presented on a HTML page
 
 * If you do not find any symptoms you have in the list, click "Back" button to return to the index page.
 
+* If you click the "Confirm" button without any selection, an alert will show up.
+
+![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/alert.png)
+
+* Click "OK" to return to the index page.
+
 * After selecting the corresponding symptoms, it will show a message box for you to check what you have selected. You can choose to add on more symptoms by clicking the respective boxes below.
 
 ![image](https://github.com/Jingxuaw/IRS-Project-Your-E-Diagnostics/blob/master/example2.png)
