@@ -21,9 +21,9 @@ All the functions are programmed based on Python and presented on a HTML page
 ## Libraries
 
 * flask
-* joblib 0.16.0
-* pandas 1.0.5
-* numpy 1.17.0
+* joblib==0.16.0
+* pandas==1.0.5
+* numpy==1.17.0
 
 # Instructions & Functions display
 
