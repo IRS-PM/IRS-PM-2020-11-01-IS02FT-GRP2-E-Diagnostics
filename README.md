@@ -1,6 +1,6 @@
-# IRS-Project_Your-E-Diagnostic
+# IRS-Project-E-Diagnostic
 
-Your-E-Diagnostic is a project for Intelligent Reasoning Systems in National University of Singapore.
+The E-Diagnostic is a project for Intelligent Reasoning Systems in National University of Singapore.
 
 The system askes the symptoms from users and makes a disease prediction according to their syptoms.
 
